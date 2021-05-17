@@ -1,0 +1,54 @@
+{
+  "name": "popcorn-todo",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "./",
+  "main": "electron.js",
+  "build": {
+    "appId": "com.popcorn.todo",
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "scripts": {
+    "web": "react-scripts start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "electron": "npx electron .",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "electron": "^11.1.1",
+    "electron-is-dev": "^1.2.0",
+    "react": "16.13.1",
+    "react-dom": "^17.0.1",
+    "react-native": "0.63.4",
+    "react-native-web": "^0.16.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "electron-builder": "^22.9.1",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-scripts": "^4.0.1",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
